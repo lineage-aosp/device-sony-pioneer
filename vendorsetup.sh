@@ -14,7 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_h3113-eng
-add_lunch_combo aosp_h3113-userdebug
-add_lunch_combo aosp_h4113-eng
-add_lunch_combo aosp_h4113-userdebug
+add_lunch_combo lineage_oioneer-eng
+add_lunch_combo lineage_pioneer-userdebug

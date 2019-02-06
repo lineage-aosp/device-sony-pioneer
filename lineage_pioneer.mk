@@ -23,8 +23,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/pioneer/aosp_h3113.mk)
 
-PRODUCT_NAME := aosp_h4113
+# Inherit lineage os vendor 
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+PRODUCT_NAME := lineage_pioneer
 PRODUCT_DEVICE := pioneer
-PRODUCT_MODEL := Xperia XA2 Dual (AOSP)
+PRODUCT_MODEL := Xperia XA2 Unified
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
