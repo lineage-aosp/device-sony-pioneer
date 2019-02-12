@@ -35,3 +35,5 @@ PRODUCT_DEVICE := pioneer
 PRODUCT_MODEL := Xperia XA2 Unified
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
+
+BUILD_FINGERPRINT= google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
