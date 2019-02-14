@@ -15,4 +15,4 @@
 #
 
 add_lunch_combo lineage_oioneer-eng
-add_lunch_combo lineage_pioneer-userdebug
+add_lunch_combo aosp_pioneer-userdebug

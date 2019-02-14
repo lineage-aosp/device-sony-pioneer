@@ -15,7 +15,7 @@
 include device/sony/nile/PlatformConfig.mk
 
 # Use dual sim because it works on single sim 
-TARGET_BOOTLOADER_BOARD_NAME := H4113
+TARGET_BOOTLOADER_BOARD_NAME := H3113
 
 # Platform
 PRODUCT_PLATFORM := nile
