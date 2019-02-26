@@ -15,4 +15,4 @@
 #
 
 add_lunch_combo lineage_pioneer-eng
-add_lunch_combo linegae_pioneer-userdebug
+add_lunch_combo lineagee_pioneer-userdebug
