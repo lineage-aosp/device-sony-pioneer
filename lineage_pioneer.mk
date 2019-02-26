@@ -12,19 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# DualSim
-PRODUCT_DEVICE_DS := true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.multisim.config=dsds \
-    persist.radio.multisim.config=dsds \
-    ro.telephony.default_network=9,0
+TARGET_KERNEL_CONFIG := aosp_nile_pioneer_defconfig
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/pioneer/aosp_h3113.mk)
+$(call inherit-product, device/sony/pioneer/device.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := aosp_h4113
+# Inherit lineage os vendor 
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+PRODUCT_NAME := lineage_pioneer
 PRODUCT_DEVICE := pioneer
-PRODUCT_MODEL := Xperia XA2 Dual (AOSP)
+PRODUCT_MODEL := Xperia XA2 (AOSP Trees)
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
